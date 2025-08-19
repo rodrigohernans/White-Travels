@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>White Travels</title>
+    <!-- En tu archivo HTML -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar fixed top-0 left-0 right-0 z-50">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl">White Travels</a>
+        </div>
+
+        <!-- NAVEGACION BAR END -->
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-md dropdown-content bg-base-100 backdrop-blur-md rounded-box z-10 mt-3 h-70 w-72 md:w-72 lg:w-80 p-2 shadow top-0 right-0"
+            >
+              <li class="menu-item"><a>Inicio</a></li>
+              <li class="menu-item"><a>Destinos Posibles</a></li>
+              <li class="menu-item"><a>Paquetes armados</a></li>
+              <li class="menu-item"><a>Quienes somos</a></li>
+              <li class="menu-item"><a>Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="background-main flex flex-col items-center justify-center min-h-screen"
+    >
+      <div
+        class="h-[60vh] flex flex-col items-center justify-center text-center"
+      >
+        <h1
+          class="text-5xl font-extrabold text-white text-center tracking-tight leading-tight drop-shadow-lg font-display w-full"
+        >
+          Explora tu Destino Favorito
+        </h1>
+
+        <p class="text-xl text-white text-center m-6">
+          ¡Descubre el mundo con nosotros!
+        </p>
+        <p class="text-xl text-white text-center m-4">
+          ¡Planes personalizados!
+        </p>
+      </div>
+
+      <div class="flex justify-center text-center mt-6">
+        <button class="btn btn-wide btn-success text-white w-[20rem] text-lg">
+          Explorar
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

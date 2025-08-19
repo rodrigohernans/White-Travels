@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-main {
+  /* background-image: radial-gradient(
+      ellipse 120% 80% at 70% 20%,
+      rgba(16, 185, 129, 0.15),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 100% 60% at 30% 10%,
+      rgba(16, 185, 129, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 90% 70% at 50% 0%,
+      rgba(16, 185, 129, 0.18),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 110% 50% at 80% 30%,
+      rgba(16, 185, 129, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(125% 125% at 50% 90%, #ffffff 40%, #10b981 100%);
+ */
+
+  position: relative;
+  background-image: url(./assets/beachBg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white; /* Asegura contraste */
+  z-index: 0;
+}
+
+.background-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+  z-index: -1; /* Se queda detrás del contenido */
+}
